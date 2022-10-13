@@ -1,0 +1,22 @@
+{
+  "name": "acdc",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "directus/*"
+  ],
+  "scripts": {
+    "dev": "npx nx start app",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "start": "npm run start --workspaces --if-present",
+    "directus:app": "cd directus && npm init directus-project app",
+    "directus:extension": "cd directus && npm init directus-extension"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nx": "^14.8.2"
+  }
+}

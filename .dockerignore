@@ -1,0 +1,8 @@
+# Git structures
+.git
+.gitattributes
+.gitignore
+
+#Folders
+node_modules
+dist
