@@ -1,7 +1,7 @@
 {
-  "name": "acdc",
-  "version": "1.0.0",
-  "description": "",
+  "name": "directus-template",
+  "version": "0.0.1",
+  "description": "Project structure to easily manage a Directus application and its extensions.",
   "workspaces": [
     "directus/*"
   ],
