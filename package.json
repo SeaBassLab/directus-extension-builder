@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "description": "Project structure to easily manage a Directus application and its extensions.",
   "workspaces": [
-    "directus/*"
+    "/*"
   ],
   "scripts": {
     "dev": "npx nx start app",
     "test": "npm run test --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
     "start": "npm run start --workspaces --if-present",
-    "directus:app": "cd directus && npm init directus-project app",
-    "directus:extension": "cd directus && npm init directus-extension"
+    "directus:app": "npm init directus-project app",
+    "directus:extension": "npm init directus-extension"
   },
   "keywords": [],
   "author": "",
