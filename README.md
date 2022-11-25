@@ -1,34 +1,34 @@
 ## Directus-template
 
-Autor:
+### Author:
 
-- Pulido, Sebastian ( @CMA1448 )
+@SeaBassLab [profile](https://github.com/SeaBassLab)
 
 ## tl;dr
 
-Se utiliza una estructura de monorepo `npm workspaces` y `nx` como dependencia de desarrollo para facilitar y acelerar la experiencia del desarrollador.
+A monorepo framework of `npm workspaces` and `nx` is used as a development dependency to make the developer experience easier and faster.
 
-# Instalacion
+# Installation
 
-- Clonar el repositorio `Clone with SSH or HTTPs`.
-- Ingresar a `cd directus-template`.
-- Ejecutar el comando `npm run directus:app` para crear una nueva aplicación de directus.
-- Ejecutar el comando `npm run dev` para iniciar la aplicación en modo desarrollo.
-- Ejecutar el comando `npm run start` para iniciar la aplicación en modo producción.
+- Clone the repository `Clone with SSH or HTTPs`.
+- Enter `cd directus-template`.
+- Execute the command `npm run directus:app` to create a new directus application.
+- Execute the `npm run dev` command to start the application in development mode.
+- Execute the `npm run start` command to start the application in production mode.
 
-## Crear Extensiones
+## Create Extensions
 
-- Ejecutar el comando `npm run directus:extension` para crear una nueva extension de directus.
-- Elejir el tipo de extension
-- Elejir TypeScript
+- Execute the command `npm run directus:extension` to create a new directus extension.
+- Choose the type of extension
+- Choose TypeScript/ JavaScript
 
-## Agregar Extensiones
+## Add Extensions
 
-Para agregar una nueva extension en la aplicación.
+To add a new extension in the application.
 
-- Copiar el nombre y version exactas de la extension desde su propio `package.json`.
+- Copy the exact name and version of the extension from your own `package.json`.
 
-Ejemplo:
+Example:
 
 ```js
 {
@@ -37,9 +37,9 @@ Ejemplo:
 }
 ```
 
-- Agregarlo como dependenica en el `package.json` de la App.
+- Add it as a dependency in the `package.json` of the App.
 
-Ejemplo:
+Example:
 
 ```js
   "dependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "directus-extension-xlsx-to-json",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "directus",
     "directus-extension",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SeaBassLab/directus-extension-builder/xlsx-to-json.git"
+    "url": "git+https://github.com/SeaBassLab/directus-extension-builder/tree/main/xlsx-to-json"
   },
   "author": "SeaBassLab",
   "dependencies": {
