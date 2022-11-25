@@ -1,5 +1,7 @@
 # directus-extension-xlsx-to-json
 
+directus-extension-xlsx-to-json is a directus-custom-endpoint library that allows you to convert xlsx to json simply and easily.
+
 ### Author:
 
 @SeaBassLab [profile](https://github.com/SeaBassLab)
@@ -8,10 +10,6 @@
 
 - Install by executing `npm i directus-extension-xlsx-to-json`
 - or `yarn add directus-extension-xlsx-to-json`.
-
-## Description
-
-directus-extension-xlsx-to-json is a directus-custom-endpoint library that allows you to convert xlsx to json simply and easily.
 
 ## Motivation
 
