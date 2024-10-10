@@ -1,8 +1,8 @@
 FROM node:latest
 
-WORKDIR /acdc
+WORKDIR /app
 
-COPY . /acdc
+COPY . /app
 
 RUN npm install --omit=dev
 
