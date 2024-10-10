@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "directus start"
+    "start": "directus start",
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
