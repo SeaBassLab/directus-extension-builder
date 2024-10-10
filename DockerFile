@@ -1,0 +1,8 @@
+# Utiliza la imagen oficial de Directus
+FROM directus/directus:latest
+
+# Instala las dependencias necesarias
+RUN apk add --no-cache bash curl
+
+# Exponer el puerto 8055 para Directus
+EXPOSE 8055

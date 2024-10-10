@@ -1,0 +1,84 @@
+services:
+  - type: web
+    name: directus
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: directus start
+    envVars:
+      - key: HOST
+        value: "0.0.0.0"
+      - key: PORT
+        value: 8055
+      - key: PUBLIC_URL
+        value: "/"
+      - key: RATE_LIMITER_ENABLED
+        value: false
+      - key: RATE_LIMITER_STORE
+        value: memory
+      - key: RATE_LIMITER_POINTS
+        value: 25
+      - key: RATE_LIMITER_DURATION
+        value: 1
+      - key: CACHE_ENABLED
+        value: false
+      - key: CACHE_STORE
+        value: memory
+      - key: ASSETS_CACHE_TTL
+        value: "30d"
+      - key: STORAGE_LOCATIONS
+        value: "local"
+      - key: STORAGE_LOCAL_DRIVER
+        value: "local"
+      - key: STORAGE_LOCAL_ROOT
+        value: "./uploads"
+      - key: ACCESS_TOKEN_TTL
+        value: "15m"
+      - key: REFRESH_TOKEN_TTL
+        value: "7d"
+      - key: REFRESH_TOKEN_COOKIE_SECURE
+        value: false
+      - key: REFRESH_TOKEN_COOKIE_SAME_SITE
+        value: "lax"
+      - key: REFRESH_TOKEN_COOKIE_NAME
+        value: "directus_refresh_token"
+      - key: SESSION_COOKIE_TTL
+        value: "1d"
+      - key: SESSION_COOKIE_SECURE
+        value: false
+      - key: SESSION_COOKIE_SAME_SITE
+        value: "lax"
+      - key: SESSION_COOKIE_NAME
+        value: "directus_refresh_token"
+      - key: CORS_ENABLED
+        value: true
+      - key: CORS_ORIGIN
+        value: true
+      - key: CORS_METHODS
+        value: GET,POST,PATCH,DELETE
+      - key: CORS_ALLOWED_HEADERS
+        value: Content-Type,Authorization
+      - key: CORS_EXPOSED_HEADERS
+        value: Content-Range
+      - key: CORS_CREDENTIALS
+        value: true
+      - key: CORS_MAX_AGE
+        value: 18000
+      - key: AUTH_PROVIDERS
+        value: ""
+      - key: EXTENSIONS_PATH
+        value: "./extensions"
+      - key: EXTENSIONS_AUTO_RELOAD
+        value: false
+      - key: EMAIL_FROM
+        value: "no-reply@example.com"
+      - key: EMAIL_TRANSPORT
+        value: "sendmail"
+      - key: EMAIL_SENDMAIL_NEW_LINE
+        value: "unix"
+      - key: EMAIL_SENDMAIL_PATH
+        value: "/usr/sbin/sendmail"
+    disk:
+      - mountPath: /data
+        name: directus-data
+        sizeGB: 1
