@@ -1,26 +1,16 @@
 {
-  "name": "directus-template",
-  "version": "0.0.2",
-  "description": "Project structure to easily manage a Directus application and its extensions.",
-  "workspaces": [
-    "./*"
-  ],
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "npx nx start app",
-    "test": "npm run test --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
-    "start": "npm run build && npm run start --workspaces --if-present",
-    "directus:app": "npm init directus-project app",
-    "directus:extension": "npm init directus-extension"
+    "start": "directus start"
   },
   "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SeaBassLab/directus-extension-builder.git"
-  },
-  "author": "SeaBassLab",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nx": "^14.8.2"
+  "dependencies": {
+    "directus": "^11.1.1",
+    "pg": "^8.13.0"
   }
 }
