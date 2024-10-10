@@ -32,7 +32,7 @@ Example:
 
 ```js
 {
-  "name": "directus-extension-editorjs",
+  "name": "directus-extension-editor-js",
   "version": "1.0.0",
 }
 ```
